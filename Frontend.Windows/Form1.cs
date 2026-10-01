@@ -6,5 +6,10 @@ namespace Frontend.Windows
         {
             InitializeComponent();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
