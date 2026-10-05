@@ -1,17 +1,7 @@
-namespace Frontend.Windows
-{
-    internal static class Program
-    {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1()); 
-        }
-    }
-}
+using Evaluator.Logic;
+
+Console.WriteLine("Expresions Evaluator");
+var expresion1 = "4*5/(4+6)";
+var expresion2 = "4*(5+6-(8/2^3)-7)-1";
+Console.WriteLine($"{expresion1} = {MyEvaluator.Evaluate(expresion1)}");
+Console.WriteLine($"{expresion2} = {MyEvaluator.Evaluate(2expresion2)}");
