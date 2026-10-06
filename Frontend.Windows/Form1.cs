@@ -1,16 +1,13 @@
-using Microsoft.VisualBasic;
+using Backend;
 
 namespace Frontend.Windows
 {
     public partial class Form1 : Form
     {
-        public object MyEvaluator { get; private set; }
-
         public Form1()
         {
             InitializeComponent();
         }
-
 
         private void btn7_Click(object sender, EventArgs e)
         {
