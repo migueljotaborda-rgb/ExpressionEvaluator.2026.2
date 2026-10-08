@@ -76,7 +76,10 @@ namespace Frontend.Windows
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (textDisplay.Text.Length > 0)
+            {
             textDisplay.Text = textDisplay.Text.Substring(0, textDisplay.Text.Length - 1);
+        }
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
