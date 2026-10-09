@@ -9,10 +9,10 @@ public static class ExpressionEvaluator
         return (result % 1 == 0) ? result.ToString("0") : result.ToString();
     }
 
-    private static string ToPostfix(string infix)
+    private static string ToPostfix(string infix) 
     {
         string postfix = string.Empty;
-        char[] stack = new char[infix.Length];
+        char[] stack = new char[infix.Length];        
         int top = -1;
 
         for (int i = 0; i < infix.Length; i++)
@@ -40,22 +40,22 @@ public static class ExpressionEvaluator
                     }
                     stack[++top] = item;
                 }
-                    }
-                    else
-                    {
+            }
+            else
+            {
                 string number = string.Empty;
                 while (i < infix.Length && (char.IsDigit(infix[i]) || infix[i] == '.'))
-                        {
+                {
                     number += infix[i];
                     i++;
-                    }
+                }
                 i--;
                 postfix += number + " ";
-                }
             }
+        }
 
         while (top >= 0)
-            {
+        {
             postfix += stack[top--] + " ";
         }
 
@@ -93,7 +93,7 @@ public static class ExpressionEvaluator
         double[] stack = new double[tokens.Length];
         int top = -1;
 
-        foreach (var token in tokens)
+        foreach (var token in tokens) 
         {
             if (token.Length == 1 && IsOperator(token[0]))
             {

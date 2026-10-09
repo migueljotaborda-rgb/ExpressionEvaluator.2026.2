@@ -11,110 +11,110 @@ namespace Frontend.Windows
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "7";
+            txtDisplay.Text += "7";
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "8";
+            txtDisplay.Text += "8";
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "9";
+            txtDisplay.Text += "9";
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "6";
+            txtDisplay.Text += "6";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "5";
+            txtDisplay.Text += "5";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "4";
+            txtDisplay.Text += "4";
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "3";
+            txtDisplay.Text += "3";
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "2";
+            txtDisplay.Text += "2";
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "1";
+            txtDisplay.Text += "1";
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "0";
+            txtDisplay.Text += "0";
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += ".";
+            txtDisplay.Text += ".";
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "/";
+            txtDisplay.Text += "/";
         }
 
         private void btnMultiplay_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "*";
+            txtDisplay.Text += "*";
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (textDisplay.Text.Length > 0)
+            if (txtDisplay.Text.Length > 0)
             {
-            textDisplay.Text = textDisplay.Text.Substring(0, textDisplay.Text.Length - 1);
-        }
+                txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1);
+            }
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "+";
+            txtDisplay.Text += "+";
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "-";
+            txtDisplay.Text += "-";
         }
 
         private void btnPow_Click(object sender, EventArgs e)
         {
-            textDisplay.Text = string.Empty;
+            txtDisplay.Text = string.Empty;
         }
+
         private void button12_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "(";
-
+            txtDisplay.Text += "(";
         }
+
         private void btnCloseParenthsis_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += ")";
+            txtDisplay.Text += ")";
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += "^";
-
+            txtDisplay.Text += "^";
         }
 
         private void btnResultado_Click(object sender, EventArgs e)
         {
-            textDisplay.Text += $"={MyEvaluator.Evaluate(textDisplay)}";
+            txtDisplay.Text += $"={ExpressionEvaluator.Evalute(txtDisplay.Text)}";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -123,4 +123,3 @@ namespace Frontend.Windows
         }
     }
 }
- 
